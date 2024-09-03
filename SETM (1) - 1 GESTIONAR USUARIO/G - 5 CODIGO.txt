@@ -1,0 +1,18 @@
+@startuml
+actor "Usuario Registrado" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Acceder al Perfil Personalizado" as UC1
+  usecase "Ver Datos Personales" as UC2
+  usecase "Gestionar Objetivos de Salud" as UC3
+  usecase "Ver Historial de Actividad" as UC4
+  usecase "Gestionar Preferencias" as UC5
+}
+
+User --> UC1: Accede a perfil
+UC1 --> UC2: Visualiza datos personales
+UC1 --> UC3: Gestiona objetivos de salud
+UC1 --> UC4: Visualiza historial de actividad
+UC1 --> UC5: Gestiona preferencias
+
+@enduml

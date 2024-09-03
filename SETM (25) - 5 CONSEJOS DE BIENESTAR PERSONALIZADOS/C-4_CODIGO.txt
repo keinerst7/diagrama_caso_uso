@@ -1,0 +1,25 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Registrar Alimentación" as UC1
+  usecase "Registrar Actividad Física" as UC2
+  usecase "Registrar Sueño" as UC3
+  usecase "Analizar Datos del Usuario" as UC4
+  usecase "Generar Recomendaciones" as UC5
+  usecase "Mostrar Recomendaciones" as UC6
+}
+
+User --> UC1: Registrar alimentación
+User --> UC2: Registrar actividad física
+User --> UC3: Registrar sueño
+
+UC1 --> UC4: Datos de alimentación
+UC2 --> UC4: Datos de actividad física
+UC3 --> UC4: Datos de sueño
+
+UC4 --> UC5: Análisis de datos
+UC5 --> UC6: Generar recomendaciones
+UC6 --> User: Mostrar recomendaciones
+
+@enduml

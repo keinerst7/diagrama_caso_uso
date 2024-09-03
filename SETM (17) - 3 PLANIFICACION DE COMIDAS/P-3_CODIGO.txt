@@ -1,0 +1,25 @@
+@startuml
+actor "Sofía" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Planificar Comidas" as UC1
+  usecase "Sincronizar con MyFitnessPal" as UC2
+  usecase "Ver Ingesta Calórica Diaria" as UC3
+  usecase "Actualizar Datos de MyFitnessPal" as UC4
+  usecase "Reflejar Cambios de MyFitnessPal" as UC5
+}
+
+rectangle "Aplicación MyFitnessPal" {
+  usecase "Registrar Ingesta Calórica" as UC6
+  usecase "Reflejar Cambios de Salud en tus Manos" as UC7
+}
+
+User --> UC1: Planifica comidas
+UC1 --> UC2: Sincroniza con MyFitnessPal
+UC2 --> UC3: Ve ingesta calórica diaria
+UC4 --> UC2: Actualiza datos de MyFitnessPal
+UC5 --> UC3: Refleja cambios de MyFitnessPal
+UC6 --> UC7: Registra ingesta calórica
+UC7 --> UC5: Refleja cambios de Salud en tus Manos
+
+@enduml

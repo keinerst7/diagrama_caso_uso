@@ -1,0 +1,16 @@
+@startuml
+actor "Desarrollador Frontend" as FrontendDev
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Implementar Interfaz de Usuario" as UC1
+  usecase "Diseñar Interfaz Intuitiva" as UC2
+  usecase "Crear Diseño Atractivo" as UC3
+  usecase "Desarrollar Funcionalidades de Gestión de Usuarios" as UC4
+}
+
+FrontendDev --> UC1: Implementa la interfaz de usuario
+UC1 --> UC2: Diseña una interfaz intuitiva
+UC1 --> UC3: Crea un diseño atractivo
+UC1 --> UC4: Desarrolla funcionalidades para la gestión de usuarios
+
+@enduml

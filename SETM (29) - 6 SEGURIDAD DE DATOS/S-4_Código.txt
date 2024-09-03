@@ -1,0 +1,19 @@
+@startuml
+!define RECTANGLE class
+actor "Equipo de Desarrollo" as Equipo
+
+rectangle "Aplicación 'Salud en tus Manos'" {
+    usecase "Analizar datos de salud de forma segura" as UC1
+    usecase "Analizar datos de salud de forma anónima" as UC2
+    usecase "Identificar patrones y tendencias" as UC3
+    usecase "Detectar oportunidades de mejora" as UC4
+    usecase "Ofrecer experiencia de usuario personalizada" as UC5
+}
+
+Equipo --> UC1
+Equipo --> UC2
+Equipo --> UC3
+Equipo --> UC4
+Equipo --> UC5
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+actor "Desarrollador" as Developer
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Analizar Datos de Usuario" as UC1
+  usecase "Identificar Patrones de Comportamiento" as UC2
+  usecase "Detectar Tendencias" as UC3
+  usecase "Descubrir Oportunidades de Mejora" as UC4
+}
+
+Developer --> UC1: Realiza análisis de datos
+UC1 --> UC2: Identifica patrones de comportamiento
+UC1 --> UC3: Detecta tendencias
+UC1 --> UC4: Descubre oportunidades de mejora
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+actor Usuario
+
+rectangle "Sistema de Integración de Salud" {
+  usecase "Conectar dispositivos de salud" as UC1
+  usecase "Sincronizar datos de salud" as UC2
+  usecase "Configurar preferencias de sincronización" as UC3
+  usecase "Visualizar datos de salud sincronizados" as UC4
+  usecase "Actualizar registros financieros con datos de salud" as UC5
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+
+@enduml

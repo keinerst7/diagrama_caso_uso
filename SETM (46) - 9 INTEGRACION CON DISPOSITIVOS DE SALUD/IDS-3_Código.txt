@@ -1,0 +1,20 @@
+@startuml
+actor EquipoAseguramientoCalidad as "Equipo de Aseguramiento de Calidad"
+
+rectangle "Sistema de Pruebas de Integración y Validación" {
+  usecase "Configurar pruebas de integración" as UC1
+  usecase "Ejecutar pruebas de sincronización de datos" as UC2
+  usecase "Validar precisión de datos sincronizados" as UC3
+  usecase "Registrar resultados de pruebas" as UC4
+  usecase "Generar informes de validación" as UC5
+  usecase "Informar problemas detectados" as UC6
+}
+
+EquipoAseguramientoCalidad --> UC1
+EquipoAseguramientoCalidad --> UC2
+EquipoAseguramientoCalidad --> UC3
+EquipoAseguramientoCalidad --> UC4
+EquipoAseguramientoCalidad --> UC5
+EquipoAseguramientoCalidad --> UC6
+
+@enduml

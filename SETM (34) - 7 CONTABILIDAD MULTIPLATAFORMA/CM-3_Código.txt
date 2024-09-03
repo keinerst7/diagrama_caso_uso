@@ -1,0 +1,17 @@
+@startuml
+!define RECTANGLE class
+actor "Equipo de Aseguramiento de Calidad" as QA
+
+rectangle "Plataforma de Contabilidad" {
+    usecase "Realizar pruebas en diferentes dispositivos" as UC1
+    usecase "Realizar pruebas en diferentes sistemas operativos" as UC2
+    usecase "Garantizar funcionamiento correcto" as UC3
+    usecase "Asegurar consistencia en la experiencia del usuario" as UC4
+}
+
+QA --> UC1
+QA --> UC2
+QA --> UC3
+QA --> UC4
+
+@enduml

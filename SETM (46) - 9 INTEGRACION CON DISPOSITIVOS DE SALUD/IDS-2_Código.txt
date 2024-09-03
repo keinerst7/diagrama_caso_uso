@@ -1,0 +1,18 @@
+@startuml
+actor EquipoDesarrollo as "Equipo de Desarrollo"
+
+rectangle "Sistema de Evaluación de Dispositivos" {
+  usecase "Investigar dispositivos de salud compatibles" as UC1
+  usecase "Evaluar características de dispositivos" as UC2
+  usecase "Realizar pruebas de integración" as UC3
+  usecase "Documentar compatibilidad de dispositivos" as UC4
+  usecase "Actualizar la lista de dispositivos compatibles" as UC5
+}
+
+EquipoDesarrollo --> UC1
+EquipoDesarrollo --> UC2
+EquipoDesarrollo --> UC3
+EquipoDesarrollo --> UC4
+EquipoDesarrollo --> UC5
+
+@enduml

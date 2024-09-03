@@ -1,0 +1,15 @@
+@startuml
+left to right direction 
+actor "Usuario Nuevo" as User
+
+package information {
+usecase "Registro con Correo Electrónico" as UC1
+usecase "Registro con Facebook" as UC2
+usecase "Registro con Google" as UC3
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+
+@enduml

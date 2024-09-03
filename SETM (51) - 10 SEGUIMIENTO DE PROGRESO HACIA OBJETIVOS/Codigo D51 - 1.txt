@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor "Usuario" as User
+
+package information {
+usecase "Visualizar Progreso con Gráficos" as UC1
+usecase "Comparar Peso Actual con Peso Inicial" as UC2
+usecase "Recibir Alertas de Progreso" as UC3
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+
+@enduml

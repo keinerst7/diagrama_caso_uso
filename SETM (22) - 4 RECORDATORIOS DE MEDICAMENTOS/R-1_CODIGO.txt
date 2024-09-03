@@ -1,0 +1,16 @@
+@startuml
+actor "Pedro" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Configurar Recordatorio de Medicamentos" as UC1
+  usecase "Recibir Notificación de Dosis" as UC2
+  usecase "Marcar Dosis Tomada" as UC3
+  usecase "Ver Historial de Cumplimiento" as UC4
+}
+
+User --> UC1: Configura recordatorio de medicamentos
+UC1 --> UC2: Recibe notificación de dosis
+UC2 --> UC3: Marca dosis como tomada
+UC3 --> UC4: Actualiza historial de cumplimiento
+
+@enduml

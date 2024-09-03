@@ -1,0 +1,18 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Configurar Necesidades Nutricionales" as UC1
+  usecase "Crear Plan de Comidas Personalizado" as UC2
+  usecase "Seleccionar Alimentos" as UC3
+  usecase "Ver Información Nutricional" as UC4
+  usecase "Guardar Plan de Comidas" as UC5
+}
+
+User --> UC1: Configura necesidades nutricionales
+UC1 --> UC2: Crea plan de comidas personalizado
+UC2 --> UC3: Selecciona alimentos
+UC3 --> UC4: Ve información nutricional
+UC2 --> UC5: Guarda plan de comidas
+
+@enduml

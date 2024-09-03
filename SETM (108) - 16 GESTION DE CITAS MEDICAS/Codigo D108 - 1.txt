@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor Usuario
+actor Profesional
+
+package information {
+usecase "Buscar profesionales de salud" as UC1
+usecase "Solicitar asesoramiento" as UC2
+usecase "Enviar preguntas o inquietudes" as UC3
+usecase "Recibir asesoramiento personalizado" as UC4
+usecase "Actualizar perfil de salud" as UC5
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC5
+UC2 --> UC4
+
+Profesional --> UC4
+Profesional --> UC3
+
+@enduml

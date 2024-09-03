@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor Usuario
+
+package information {
+usecase "Generar Informe Personalizado" as generarInforme
+usecase "Seleccionar Métricas" as seleccionarMetricas
+usecase "Establecer Rango de Fechas" as establecerRangoFechas
+usecase "Aplicar Filtros" as aplicarFiltros
+usecase "Exportar Informe" as exportarInforme
+}
+
+Usuario -> generarInforme : Solicita informe
+generarInforme -> seleccionarMetricas : Selecciona métricas
+generarInforme -> establecerRangoFechas : Establece rango de fechas
+generarInforme -> aplicarFiltros : Aplica filtros
+generarInforme -> exportarInforme : Exporta informe
+
+note right of generarInforme : (PDF, CSV, imagen)
+
+@enduml

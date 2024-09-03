@@ -1,0 +1,16 @@
+@startuml
+actor "Usuario Registrado" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Completar Perfil Detallado" as UC1
+  usecase "Actualizar Información de Objetivos de Salud" as UC2
+  usecase "Actualizar Información sobre Condiciones Médicas" as UC3
+  usecase "Actualizar Preferencias Alimentarias" as UC4
+}
+
+User --> UC1: Completa perfil con información detallada
+UC1 --> UC2: Incluye objetivos de salud
+UC1 --> UC3: Incluye condiciones médicas
+UC1 --> UC4: Incluye preferencias alimentarias
+
+@enduml

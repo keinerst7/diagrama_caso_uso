@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor Usuario
+
+package information {
+usecase "Recibir actualizaciones periódicas" as UC1
+usecase "Suscribirse a actualizaciones" as UC2
+usecase "Consultar contenido educativo" as UC3
+usecase "Personalizar preferencias de contenido" as UC4
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+
+@enduml

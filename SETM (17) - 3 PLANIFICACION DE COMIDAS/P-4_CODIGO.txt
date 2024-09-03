@@ -1,0 +1,25 @@
+@startuml
+actor "María" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Crear Plan de Comidas Personalizado" as UC1
+  usecase "Registrar Alimentos Escaneando Códigos de Barras" as UC2
+  usecase "Registrar Alimentos Manualmente" as UC3
+  usecase "Ver Resumen de Ingesta Calórica y Macronutrientes" as UC4
+  usecase "Comparar Consumo Real con Planificado" as UC5
+  usecase "Ajustar Plan de Comidas" as UC6
+}
+
+User --> UC1: Crear plan de comidas
+User --> UC2: Escanear códigos de barras
+User --> UC3: Ingresar alimentos manualmente
+User --> UC4: Ver resumen de ingesta
+User --> UC5: Comparar consumo con plan
+User --> UC6: Ajustar plan de comidas
+
+UC2 --> UC4: Alimentos registrados
+UC3 --> UC4: Alimentos registrados
+UC5 --> UC6: Identificar ajustes necesarios
+
+@enduml
+P-4

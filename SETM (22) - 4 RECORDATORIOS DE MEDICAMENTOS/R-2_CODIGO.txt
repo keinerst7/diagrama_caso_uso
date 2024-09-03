@@ -1,0 +1,18 @@
+@startuml
+actor "Ana" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Agregar Medicamento" as UC1
+  usecase "Acceder a Información de Medicamento" as UC2
+  usecase "Ver Dosis y Frecuencia" as UC3
+  usecase "Ver Efectos Secundarios" as UC4
+  usecase "Ver Precauciones" as UC5
+}
+
+User --> UC1: Agrega medicamento
+UC1 --> UC2: Accede a información de medicamento
+UC2 --> UC3: Ver dosis y frecuencia
+UC2 --> UC4: Ver efectos secundarios
+UC2 --> UC5: Ver precauciones
+
+@enduml

@@ -1,0 +1,20 @@
+MONITOREO DE ACTIVIDAD FISICA
+
+@startuml
+actor "Sofía" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Registrar Actividad Física" as UC1
+  usecase "Ingresar Tipo de Actividad" as UC2
+  usecase "Ingresar Duración" as UC3
+  usecase "Ingresar Intensidad" as UC4
+  usecase "Ingresar Calorías Quemadas" as UC5
+}
+
+User --> UC1: Registra actividad física
+UC1 --> UC2: Ingresa tipo de actividad
+UC1 --> UC3: Ingresa duración
+UC1 --> UC4: Ingresa intensidad
+UC1 --> UC5: Ingresa calorías quemadas
+
+@enduml

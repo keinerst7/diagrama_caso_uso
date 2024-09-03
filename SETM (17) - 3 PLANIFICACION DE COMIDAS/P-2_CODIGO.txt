@@ -1,0 +1,22 @@
+@startuml
+actor "Juan" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Explorar Biblioteca de Recetas" as UC1
+  usecase "Filtrar Recetas por Ingredientes" as UC2
+  usecase "Filtrar Recetas por Tipo de Dieta" as UC3
+  usecase "Ver Información Nutricional de Recetas" as UC4
+  usecase "Personalizar Recetas" as UC5
+  usecase "Ajustar Porciones" as UC6
+  usecase "Sustituir Ingredientes" as UC7
+}
+
+User --> UC1: Explora biblioteca de recetas
+UC1 --> UC2: Filtra recetas por ingredientes
+UC1 --> UC3: Filtra recetas por tipo de dieta
+UC1 --> UC4: Ve información nutricional de recetas
+UC1 --> UC5: Personaliza recetas
+UC5 --> UC6: Ajusta porciones
+UC5 --> UC7: Sustituye ingredientes
+
+@enduml

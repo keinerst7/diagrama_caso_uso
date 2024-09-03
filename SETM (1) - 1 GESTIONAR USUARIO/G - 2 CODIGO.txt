@@ -1,0 +1,12 @@
+@startuml
+actor "Nuevo Usuario" as User
+
+rectangle "Plataforma" {
+  usecase "Solicitar Información Básica" as UC1
+  usecase "Registrar Usuario" as UC2
+}
+
+User --> UC1: Proporciona nombre, correo electrónico,\nfecha de nacimiento y contraseña
+UC1 --> UC2: Solicita registro
+
+@enduml

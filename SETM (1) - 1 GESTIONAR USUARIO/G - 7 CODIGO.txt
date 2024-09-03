@@ -1,0 +1,14 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Personalizar Interfaz de Usuario" as UC1
+  usecase "Elegir Tema de Color" as UC2
+  usecase "Ajustar Tamaño de Fuente" as UC3
+  usecase "Configurar Disposición de Elementos" as UC4
+}
+
+User --> UC1: Personaliza la interfaz
+UC1 --> UC2: Elige tema de color
+UC1 --> UC3: Ajusta tamaño de fuente
+UC1 --> UC4: Configura disposición de elementos

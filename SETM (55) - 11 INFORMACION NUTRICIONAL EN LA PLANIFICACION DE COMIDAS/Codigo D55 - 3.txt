@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor Desarrollador
+
+package information {
+usecase "Seleccionar Base de Datos" as seleccionarBD
+usecase "Configurar Conexión" as configurarConexion
+usecase "Realizar Consulta" as realizarConsulta
+usecase "Obtener Datos Nutricionales" as obtenerDatos
+}
+
+Desarrollador -> seleccionarBD : Selecciona base de datos
+seleccionarBD --> configurarConexion : Configura conexión
+configurarConexion --> realizarConsulta : Realiza consulta
+realizarConsulta --> obtenerDatos : Obtiene datos nutricionales
+
+@enduml

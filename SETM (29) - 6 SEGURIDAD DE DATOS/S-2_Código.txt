@@ -1,0 +1,17 @@
+@startuml
+!define RECTANGLE class
+actor Desarrollador
+
+rectangle "Aplicación 'Salud en tus Manos'" {
+    usecase "Cumplir con las normas de seguridad de datos" as UC1
+    usecase "Implementar medidas de protección de datos" as UC2
+    usecase "Realizar auditorías de seguridad" as UC3
+    usecase "Actualizar la aplicación con nuevas normas" as UC4
+}
+
+Desarrollador --> UC1
+Desarrollador --> UC2
+Desarrollador --> UC3
+Desarrollador --> UC4
+
+@enduml

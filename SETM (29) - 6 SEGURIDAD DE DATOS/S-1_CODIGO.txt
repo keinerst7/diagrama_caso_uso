@@ -1,0 +1,17 @@
+@startuml
+actor "Sofía" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Implementar Medidas de Seguridad" as UC1
+  usecase "Encriptar Datos del Usuario" as UC2
+  usecase "Controlar Acceso a Datos" as UC3
+  usecase "Autenticación de Dos Factores" as UC4
+}
+
+User --> UC1: Revisa medidas de seguridad
+UC1 --> UC2: Encripta datos del usuario
+UC1 --> UC3: Controla acceso a datos
+UC1 --> UC4: Implementa autenticación de dos factores
+
+@enduml
+

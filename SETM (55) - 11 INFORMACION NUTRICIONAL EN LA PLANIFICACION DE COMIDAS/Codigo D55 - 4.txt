@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor Usuario
+
+package information {
+usecase "Registrar Ingesta Alimentaria" as registrarIngesta
+usecase "Establecer Objetivos Nutricionales" as establecerObjetivos
+usecase "Evaluar Hábitos Alimenticios" as evaluarHabitos
+usecase "Generar Recomendaciones Personalizadas" as generarRecomendaciones
+}
+
+Usuario -> registrarIngesta : Registra ingesta alimentaria
+Usuario -> establecerObjetivos : Establece objetivos nutricionales
+evaluarHabitos -> registrarIngesta : Utiliza datos de ingesta
+evaluarHabitos -> establecerObjetivos : Compara con objetivos
+evaluarHabitos -> generarRecomendaciones : Genera recomendaciones
+
+@enduml

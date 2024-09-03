@@ -1,0 +1,18 @@
+@startuml
+actor "Sofía" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Acceder a Tutoriales de Yoga" as UC1
+  usecase "Ver Video Demostrativo" as UC2
+  usecase "Leer Explicación Detallada" as UC3
+  usecase "Seguir Tutoriales a Ritmo Propio" as UC4
+  usecase "Marcar Posturas Dominadas" as UC5
+}
+
+User --> UC1: Accede a tutoriales
+UC1 --> UC2: Ve video demostrativo
+UC1 --> UC3: Lee explicación detallada
+UC1 --> UC4: Sigue tutorial a su ritmo
+UC1 --> UC5: Marca posturas dominadas
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+actor "Juan" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Integrar con Dispositivos de Salud" as UC1
+  usecase "Sincronizar Datos de Actividad Física" as UC2
+  usecase "Visualizar Datos en Gráficos" as UC3
+  usecase "Comparar Rendimiento" as UC4
+}
+
+User --> UC1: Conecta dispositivo de salud
+UC1 --> UC2: Sincroniza datos automáticamente
+UC2 --> UC3: Visualiza datos en gráficos
+UC2 --> UC4: Compara rendimiento
+
+@enduml

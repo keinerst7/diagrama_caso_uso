@@ -1,0 +1,22 @@
+@startuml
+actor EquipoInfraestructura as "Equipo de Infraestructura"
+
+rectangle "Sistema de Escalabilidad" {
+  usecase "Evaluar requisitos de escalabilidad" as UC1
+  usecase "Diseñar soluciones de escalabilidad horizontal" as UC2
+  usecase "Diseñar soluciones de escalabilidad vertical" as UC3
+  usecase "Implementar escalabilidad horizontal" as UC4
+  usecase "Implementar escalabilidad vertical" as UC5
+  usecase "Monitorear rendimiento y carga" as UC6
+  usecase "Ajustar soluciones según demanda" as UC7
+}
+
+EquipoInfraestructura --> UC1
+EquipoInfraestructura --> UC2
+EquipoInfraestructura --> UC3
+EquipoInfraestructura --> UC4
+EquipoInfraestructura --> UC5
+EquipoInfraestructura --> UC6
+EquipoInfraestructura --> UC7
+
+@enduml

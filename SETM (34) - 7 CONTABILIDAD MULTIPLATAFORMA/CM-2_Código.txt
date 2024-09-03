@@ -1,0 +1,13 @@
+@startuml
+!define RECTANGLE class
+actor Usuario
+
+rectangle "Plataforma de Contabilidad" {
+    usecase "Adaptar interfaz al tamaño de pantalla" as UC1
+    usecase "Navegar de manera cómoda y eficiente" as UC2
+}
+
+Usuario --> UC1
+Usuario --> UC2
+
+@enduml

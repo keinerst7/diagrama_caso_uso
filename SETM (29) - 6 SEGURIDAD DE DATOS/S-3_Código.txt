@@ -1,0 +1,19 @@
+@startuml
+!define RECTANGLE class
+actor Usuario
+
+rectangle "Aplicación 'Salud en tus Manos'" {
+    usecase "Controlar datos personales" as UC1
+    usecase "Controlar datos de salud" as UC2
+    usecase "Decidir qué información se recopila" as UC3
+    usecase "Decidir cómo se utiliza la información" as UC4
+    usecase "Decidir con quién se comparte la información" as UC5
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+Usuario --> UC5
+
+@enduml

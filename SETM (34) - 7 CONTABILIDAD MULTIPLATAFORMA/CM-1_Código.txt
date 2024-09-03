@@ -1,0 +1,17 @@
+@startuml
+!define RECTANGLE class
+actor Usuario
+
+rectangle "Plataforma de Contabilidad" {
+    usecase "Acceder desde ordenador" as UC1
+    usecase "Acceder desde teléfono inteligente" as UC2
+    usecase "Acceder desde tableta" as UC3
+    usecase "Gestionar finanzas en cualquier momento y lugar" as UC4
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+
+@enduml

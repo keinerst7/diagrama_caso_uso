@@ -1,0 +1,10 @@
+@startuml
+actor "Usuario Registrado" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Iniciar Sesión" as UC1
+}
+
+User --> UC1: Proporciona correo electrónico y contraseña
+
+@enduml

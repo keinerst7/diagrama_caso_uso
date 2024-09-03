@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor Usuario
+
+package information {
+usecase "Buscar técnicas de relajación" as UC1
+usecase "Ver información detallada" as UC2
+usecase "Guardar técnicas favoritas" as UC3
+usecase "Recibir recomendaciones personalizadas" as UC4
+}
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+Usuario --> UC4
+
+@enduml

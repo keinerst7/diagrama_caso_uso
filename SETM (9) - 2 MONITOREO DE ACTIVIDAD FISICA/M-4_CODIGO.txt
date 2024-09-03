@@ -1,0 +1,16 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Acceder al Historial de Actividad Física" as UC1
+  usecase "Revisar Progreso" as UC2
+  usecase "Identificar Patrones" as UC3
+  usecase "Realizar Seguimiento a Largo Plazo" as UC4
+}
+
+User --> UC1: Accede al historial
+UC1 --> UC2: Revisa progreso
+UC1 --> UC3: Identifica patrones
+UC1 --> UC4: Realiza seguimiento a largo plazo
+
+@enduml

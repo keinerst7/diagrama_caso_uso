@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor Usuario
+
+package information {
+usecase "Buscar Recetas" as buscarRecetas
+usecase "Aplicar Filtros Nutricionales" as aplicarFiltros
+usecase "Ver Resultados de Búsqueda" as verResultados
+}
+
+Usuario -> buscarRecetas : Inicia búsqueda de recetas
+buscarRecetas --> aplicarFiltros : Aplica filtros nutricionales
+aplicarFiltros -> verResultados : Muestra resultados filtrados
+verResultados --> Usuario : Muestra recetas filtradas
+
+@enduml

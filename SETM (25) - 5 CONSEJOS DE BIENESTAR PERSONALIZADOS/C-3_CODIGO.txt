@@ -1,0 +1,34 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Crear Perfil Detallado" as UC1
+  usecase "Registrar Objetivos de Salud" as UC2
+  usecase "Registrar Comidas" as UC3
+  usecase "Registrar Ejercicios" as UC4
+  usecase "Registrar Patrones de Sueño" as UC5
+  usecase "Registrar Información de Salud Mental" as UC6
+  usecase "Analizar Información del Usuario" as UC7
+  usecase "Generar Rutinas de Bienestar Personalizadas" as UC8
+  usecase "Enviar Rutinas al Usuario" as UC9
+}
+
+User --> UC1: Crear perfil
+User --> UC2: Registrar objetivos
+User --> UC3: Registrar comidas
+User --> UC4: Registrar ejercicios
+User --> UC5: Registrar patrones de sueño
+User --> UC6: Registrar salud mental
+
+UC1 --> UC7: Información del perfil
+UC2 --> UC7: Información de objetivos
+UC3 --> UC7: Información de comidas
+UC4 --> UC7: Información de ejercicios
+UC5 --> UC7: Información de sueño
+UC6 --> UC7: Información de salud mental
+
+UC7 --> UC8: Análisis de datos
+UC8 --> UC9: Rutinas personalizadas
+UC9 --> User: Recibir rutinas
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+actor "Usuario" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Navegar por la Aplicación" as UC1
+  usecase "Gestionar Perfil" as UC2
+  usecase "Acceder a Funcionalidades" as UC3
+}
+
+User --> UC1: Navega por la aplicación
+UC1 --> UC2: Gestiona su perfil
+UC1 --> UC3: Accede a funcionalidades
+
+@enduml

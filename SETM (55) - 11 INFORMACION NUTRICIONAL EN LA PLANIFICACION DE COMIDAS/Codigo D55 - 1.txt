@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Usuario" as User
+
+rectangle "Información Nutricional en la Planificación de Comidas" {
+    usecase "Proporcionar Información Nutricional de Recetas" as UC1
+    usecase "Proporcionar Información Nutricional de Alimentos" as UC2
+    usecase "Tomar Decisiones Informadas sobre la Dieta" as UC3
+}
+
+User --> UC1
+User --> UC2
+UC1 --> UC3
+UC2 --> UC3
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+actor "David" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Configurar Recordatorio de Hidratación" as UC1
+  usecase "Enviar Recordatorio de Hidratación" as UC2
+  usecase "Calcular Requerimiento Diario de Agua" as UC3
+}
+
+User --> UC1: Configura recordatorio
+UC1 --> UC2: Recibe recordatorio cada hora
+UC1 --> UC3: Calcula cantidad diaria de agua
+
+@enduml

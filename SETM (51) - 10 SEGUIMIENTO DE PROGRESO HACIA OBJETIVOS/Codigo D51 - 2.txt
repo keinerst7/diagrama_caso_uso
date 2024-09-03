@@ -1,0 +1,15 @@
+@startuml
+left to right direction
+actor "Usuario" as User
+
+package information {
+usecase "Recibir Notificaciones por Logros" as UC1
+usecase "Recibir Reconocimientos por Logros" as UC2
+usecase "Compartir Logros en Redes Sociales" as UC3
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+
+@enduml

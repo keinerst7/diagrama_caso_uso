@@ -1,0 +1,18 @@
+@startuml
+actor "María" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Evaluar Postura" as UC1
+  usecase "Tomar Fotos desde Diferentes Ángulos" as UC2
+  usecase "Analizar Imágenes de Postura" as UC3
+  usecase "Recibir Recomendaciones de Ejercicios" as UC4
+  usecase "Monitorear Progreso de Postura" as UC5
+}
+
+User --> UC1: Utiliza la función de evaluación
+UC1 --> UC2: Toma fotos desde diferentes ángulos
+UC1 --> UC3: Analiza imágenes de postura
+UC1 --> UC4: Recibe recomendaciones de ejercicios
+UC1 --> UC5: Monitorea progreso de postura
+
+@enduml

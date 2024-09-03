@@ -1,0 +1,20 @@
+@startuml
+actor ArquitectoSoftware as "Arquitecto de Software"
+
+rectangle "Sistema de Evaluación de Arquitectura" {
+  usecase "Revisar diseño de arquitectura" as UC1
+  usecase "Identificar cuellos de botella" as UC2
+  usecase "Evaluar escalabilidad de la aplicación" as UC3
+  usecase "Realizar análisis de rendimiento" as UC4
+  usecase "Proponer mejoras en la arquitectura" as UC5
+  usecase "Documentar hallazgos y recomendaciones" as UC6
+}
+
+ArquitectoSoftware --> UC1
+ArquitectoSoftware --> UC2
+ArquitectoSoftware --> UC3
+ArquitectoSoftware --> UC4
+ArquitectoSoftware --> UC5
+ArquitectoSoftware --> UC6
+
+@enduml

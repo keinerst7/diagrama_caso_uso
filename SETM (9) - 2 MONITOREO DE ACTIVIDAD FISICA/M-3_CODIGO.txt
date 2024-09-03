@@ -1,0 +1,16 @@
+@startuml
+actor "Juan" as User
+
+rectangle "Plataforma Salud en tus Manos" {
+  usecase "Generar Gráfico de Actividad Física" as UC1
+  usecase "Mostrar Distancia Recorrida Diaria" as UC2
+  usecase "Agregar Línea de Tendencia" as UC3
+  usecase "Comparar con Objetivo" as UC4
+}
+
+User --> UC1: Genera gráfico de actividad
+UC1 --> UC2: Muestra distancia diaria
+UC1 --> UC3: Agrega línea de tendencia
+UC1 --> UC4: Compara con objetivo
+
+@enduml

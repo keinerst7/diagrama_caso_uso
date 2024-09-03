@@ -1,0 +1,20 @@
+@startuml
+actor EquipoDesarrollo as "Equipo de Desarrollo"
+
+rectangle "Sistema de Escalabilidad" {
+  usecase "Analizar requisitos de escalabilidad" as UC1
+  usecase "Diseñar arquitectura escalable" as UC2
+  usecase "Implementar mecanismos de carga balanceada" as UC3
+  usecase "Realizar pruebas de carga y rendimiento" as UC4
+  usecase "Monitorear rendimiento en tiempo real" as UC5
+  usecase "Ajustar capacidad según demanda" as UC6
+}
+
+EquipoDesarrollo --> UC1
+EquipoDesarrollo --> UC2
+EquipoDesarrollo --> UC3
+EquipoDesarrollo --> UC4
+EquipoDesarrollo --> UC5
+EquipoDesarrollo --> UC6
+
+@enduml
